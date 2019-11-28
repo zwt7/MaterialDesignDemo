@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </androidx.appcompat.widget.Toolbar>
+    <Button
+        android:id="@+id/bt_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecycleView的应用"/>
+    <Button
+        android:id="@+id/bt_TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TabLayout的应用"/>
+    <Button
+        android:id="@+id/bt_Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigation的应用"/>
+
+</LinearLayout>

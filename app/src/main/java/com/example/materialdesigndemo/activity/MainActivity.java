@@ -1,5 +1,6 @@
 package com.example.materialdesigndemo.activity;
 
+import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button RecycleView,TabLayout,Navigation;
+    private Button RecycleView,TabLayout,Navigation,Notification;
 
 
 
@@ -29,9 +30,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RecycleView=findViewById(R.id.bt_recycle);
         TabLayout=findViewById(R.id.bt_TabLayout);
         Navigation=findViewById(R.id.bt_Navigation);
+        Notification=findViewById(R.id.bt_Notification);
         RecycleView.setOnClickListener(this);
         TabLayout.setOnClickListener(this);
         Navigation.setOnClickListener(this);
+        Notification.setOnClickListener(this);
     }
 
     @Override
@@ -50,6 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent=new Intent(MainActivity.this,DrawerNavigationActivity.class);
                 startActivity(intent);
                 break;
+//            case R.id.bt_Notification:
+//                intent=new Intent(MainActivity.this, NotificationActivity.class);
+//                startActivity(intent);
+//                break;
         }
     }
 }
